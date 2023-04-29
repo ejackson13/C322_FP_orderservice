@@ -8,19 +8,15 @@
 		<version>3.0.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>edu.iu.c322.finalproject</groupId>
+	<groupId>edu.iu.c322.finalProject</groupId>
 	<artifactId>orderservice</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>orderservice</name>
-	<description>Order service for C322 Final project - rental application</description>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
 	<dependencies>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-actuator</artifactId>
-		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>

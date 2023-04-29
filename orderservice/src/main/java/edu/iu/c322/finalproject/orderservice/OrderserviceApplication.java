@@ -1,4 +1,4 @@
-package edu.iu.c322.finalproject.orderservice;
+package edu.iu.c322.finalProject.orderservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

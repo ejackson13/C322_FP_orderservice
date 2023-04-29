@@ -124,7 +124,7 @@ public class OrderController {
     }
 
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin()
 
     @GetMapping("/{id}")
     public ResponseEntity<List<OrderDto>> findByCustomerId(@PathVariable int id){
@@ -137,7 +137,7 @@ public class OrderController {
         return ResponseEntity.ok(orderDtos);
 
     }
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin()
 
     @GetMapping("/order/{id}")
     public ResponseEntity<OrderDto> findByOrderId(@PathVariable int id){
@@ -153,7 +153,7 @@ public class OrderController {
 
     @ResponseStatus(HttpStatus.CREATED)
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin()
 
     @PostMapping
     public int create(@Valid @RequestBody OrderDto orderDto){
@@ -212,7 +212,7 @@ public class OrderController {
         sellerItemRepository.save(sellerItem);
     }
 
-    @CrossOrigin(origins = "http://localhost:3000")
+    @CrossOrigin()
 
     @GetMapping("/item/{itemId}")
     public ResponseEntity<SellerItemDto> getSellerItemByItemId(@PathVariable("itemId") int itemId) {
